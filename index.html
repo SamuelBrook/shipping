@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Postage Calculator</title>
+</head>
+
+<body>
+  <form>
+    <label for="searchInput">Search Name:</label>
+    <input type="text" id="searchInput" style="margin-bottom: 10px; margin-top:10px">
+    <br>
+    <label for="shippingInput">Enter Item Price:</label>
+    <input type="text" id="shippingInput" style="margin-bottom: 20px; margin-top:10px">
+  </form>
+
+  <div id=" results" style="display: flex; flex-direction: row; gap: 20px;">
+
+    <div id="supplier-container" style="margin-right: 20px;"><strong>Supplier</strong>
+      <div id="supplier"></div>
+    </div>
+    <div id="percentage-container" style="margin-right: 20px;"><strong>Percentage</strong>
+      <div id="percentage"></div>
+    </div>
+    <div id="shipping-container" style="margin-right: 20px;"><strong>Total</strong>
+      <div id="shipping"></div>
+    </div>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
