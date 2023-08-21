@@ -29,6 +29,7 @@ const displaySupplierInfo = (rows) => {
   let nameArr = [];
   let percentageArr = [];
 
+  //sort through matching roles and push to display arrays
   for (let i = 0; i < matchingRows.length; i++) {
 
     const row = matchingRows[i].split(",");
@@ -52,7 +53,7 @@ const resetPriceInput = () => {
 searchInput.addEventListener('input', function() {
   resetPriceInput();
 
-  // URL to the raw CSV file in your repository
+  // URL to the raw CSV file in repository
   const csvFileUrl = './postage.csv';
 
   fetch(csvFileUrl)
