@@ -48,6 +48,7 @@ const displaySupplierInfo = (rows) => {
 
 const resetPriceInput = () => {
   shipping.innerHTML = "";
+  shippingInput.value = "";
 }
 
 searchInput.addEventListener('input', function() {
